@@ -1,3 +1,38 @@
-body {
-  background-color: rgb(172, 172, 196);
+.container {
+  background-color: #eee;
+
+  width: 800px;
+
+  & > * {
+    background-color: orangered;
+  }
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr) 150px;
+  grid-template-rows: 100px 200px 400px 100px;
+
+  grid-gap: 30px;
+
+  .header {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+
+  .box {
+  }
+
+  .sidebar {
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+  }
+
+  .main {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .footer {
+    grid-column: 1 / -1;
+  }
 }

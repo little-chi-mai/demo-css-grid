@@ -3,36 +3,24 @@
   width: 800px;
   margin: 30px auto;
   font-family: Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   display: grid;
-  width: 90%;
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 200px));
-  grid-template-rows: repeat(2, minmax(150px, 1fr));
-  gap: 30px;
-  grid-auto-rows: 1fr;
-  align-content: center;
-  justify-content: center; }
-
-.item--1 {
-  background-color: orangered; }
-
-.item--2 {
-  background-color: palegoldenrod; }
-
-.item--3 {
-  background-color: palegreen; }
-
-.item--4 {
-  background-color: rebeccapurple; }
-
-.item--5 {
-  background-color: rosybrown; }
-
-.item--6 {
-  background-color: sandybrown; }
-
-.item--7 {
-  background-color: palevioletred; }
-
-.item--8 {
-  background-color: blue; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  grid-gap: 30px; }
+  .container .item--1 {
+    background-color: orangered; }
+  .container .item--2 {
+    background-color: palegoldenrod; }
+  .container .item--3 {
+    background-color: palegreen; }
+  .container .item--4 {
+    background-color: rebeccapurple;
+    grid-row: 2 / 3;
+    grid-column: 2 / span 2; }
+  .container .item--5 {
+    background-color: rosybrown;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4; }
+  .container .item--6 {
+    background-color: sandybrown; }
