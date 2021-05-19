@@ -1,0 +1,38 @@
+.container {
+  background-color: #eee;
+  width: 800px;
+  margin: 30px auto;
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 200px));
+  grid-template-rows: repeat(2, minmax(150px, 1fr));
+  gap: 30px;
+  grid-auto-rows: 1fr;
+  align-content: center;
+  justify-content: center; }
+
+.item--1 {
+  background-color: orangered; }
+
+.item--2 {
+  background-color: palegoldenrod; }
+
+.item--3 {
+  background-color: palegreen; }
+
+.item--4 {
+  background-color: rebeccapurple; }
+
+.item--5 {
+  background-color: rosybrown; }
+
+.item--6 {
+  background-color: sandybrown; }
+
+.item--7 {
+  background-color: palevioletred; }
+
+.item--8 {
+  background-color: blue; }
